@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/Users/Ronnie/Documents/UVA/Fourth Year/Fall/Mobile/SecureFinance/app/build/intermediates/exploded-aar/com.mcxiaoke.volley/library-aar/1.0.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="e40b9a81989bd4a846018551c280f8c4d837bf2e">
+        <dex dex="/Users/Ronnie/Documents/UVA/Fourth Year/Fall/Mobile/SecureFinance/app/build/intermediates/pre-dexed/release/classes-8c63c8fff1618f7468ed1987563b27f5bb04c916.jar" />
+    </item>
+
+</items>

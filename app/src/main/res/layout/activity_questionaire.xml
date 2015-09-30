@@ -1,0 +1,90 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.ronnie.securefinance.QuestionaireActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="GETTING TO KNOW YOUR BUDGET"
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Enter your monthly budget"-->
+        <!--android:id="@+id/textView2"-->
+        <!--android:layout_marginTop="101dp"-->
+        <!--android:layout_below="@+id/textView"-->
+        <!--android:layout_centerHorizontal="true" />-->
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/budget"
+        android:selectAllOnFocus="true"
+        android:layout_below="@+id/textView"
+        android:layout_marginTop="91dp"
+        android:layout_alignLeft="@+id/textView"
+        android:layout_alignStart="@+id/textView"
+        android:layout_alignRight="@+id/textView"
+        android:layout_alignEnd="@+id/textView" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/bills"
+        android:selectAllOnFocus="true"
+        android:layout_alignLeft="@+id/rent"
+        android:layout_alignStart="@+id/rent"
+        android:layout_below="@+id/savings"
+        android:layout_alignRight="@+id/rent"
+        android:layout_alignEnd="@+id/rent" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:selectAllOnFocus="true"
+        android:id="@+id/savings"
+        android:layout_below="@+id/budget"
+        android:layout_alignLeft="@+id/budget"
+        android:layout_alignStart="@+id/budget"
+        android:layout_alignRight="@+id/budget"
+        android:layout_alignEnd="@+id/budget" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/rent"
+        android:selectAllOnFocus="true"
+        android:layout_alignLeft="@+id/savings"
+        android:layout_alignStart="@+id/savings"
+        android:layout_below="@+id/bills"
+        android:layout_alignRight="@+id/savings"
+        android:layout_alignEnd="@+id/savings" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:id="@+id/submitButton"
+        android:onClick="submitBudget"
+        android:layout_below="@+id/rent"
+        android:layout_marginTop="38dp"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
