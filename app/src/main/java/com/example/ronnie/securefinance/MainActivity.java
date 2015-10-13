@@ -64,8 +64,13 @@ public class MainActivity extends ListActivity implements LocationListener, andr
     /* Request updates at startup */
     @Override
     protected void onResume() {
-        super.onResume();
-        locationManager.requestLocationUpdates(provider, 400, 1, this);
+        try {
+            super.onResume();
+            locationManager.requestLocationUpdates(provider, 400, 1, this);
+        }
+        catch(SecurityException e){
+            Toast.makeText(this, "Rejected",Toast.LENGTH_SHORT).show();
+        }
     }
 
     /* Remove the locationlistener updates when Activity is paused */
