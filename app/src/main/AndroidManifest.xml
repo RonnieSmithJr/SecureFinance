@@ -89,6 +89,10 @@
             android:name=".HomeActivity"
             android:label="@string/title_activity_home" >
         </activity>
+        <activity
+            android:name=".PurchaseActivity"
+            android:label="@string/title_activity_purchase" >
+        </activity>
     </application>
 
 </manifest>
